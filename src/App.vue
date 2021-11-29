@@ -29,9 +29,13 @@ export default {
 };
 </script>
 
-<style>
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Rubik:wght@400;500&display=swap');
+ * {
+   font-family: 'Roboto', sans-serif;
+   }
+   
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   background: blue;
