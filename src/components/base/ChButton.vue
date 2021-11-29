@@ -25,7 +25,7 @@ export default {
 button {
   display: flex;
   align-items: center;
-  padding: 6px;
+  padding: 6px 12px;
   border-radius: 5px;
   border: none;
   margin: 12px 0px;
