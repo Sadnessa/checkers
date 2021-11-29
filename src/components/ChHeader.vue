@@ -5,11 +5,11 @@
     </div>
     <div class="col col--50 text-wrapper">
       <ChText large>GameCheckersBot</ChText>
-      <ChText>Chess game in Telegram chat</ChText>
-      <ChButton color="#31aae5">
-        <ChText>Start playing</ChText>
+      <ChText textColor="#979797">Chess game in Telegram chat</ChText>
+      <ChButton color="#25a3e2">
+        <ChText textColor="white">Start playing</ChText>
         <template #right>
-          <img src="../assets/telega.svg">
+          <img src="../assets/telega.svg" height="18" width="18" />
         </template>
       </ChButton>
     </div>
@@ -18,14 +18,13 @@
 
 <script>
 import ChText from "./base/ChText.vue";
-import ChButton from "./base/ChButton.vue"
+import ChButton from "./base/ChButton.vue";
 
 export default {
   components: {
-  ChText,
-  ChButton,
-  }
-  
+    ChText,
+    ChButton,
+  },
 };
 </script>
 
@@ -52,8 +51,8 @@ export default {
   }
 
   .text-wrapper {
- padding: 40px 60px;
- box-sizing: border-box;
+    padding: 40px 60px;
+    box-sizing: border-box;
   }
 }
 </style>

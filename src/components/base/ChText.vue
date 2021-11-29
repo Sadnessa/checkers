@@ -1,6 +1,6 @@
 <template>
   <h1 v-if="large"><slot></slot></h1>
-  <p v-else><slot></slot></p>
+  <p :style="{color: textColor}" v-else><slot></slot></p>
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
     large: {
       type: Boolean,
     },
+
+    textColor: {
+      type: String,
+      default: "black",
+    }
   },
 };
 </script>
