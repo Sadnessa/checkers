@@ -1,7 +1,20 @@
 <template>
-    gfgf
+  <h1 v-if="large"><slot></slot></h1>
+  <p v-else><slot></slot></p>
 </template>
 
-<style lang="scss" scoped>
+<script>
+export default {
+  props: {
+    large: {
+      type: Boolean,
+    },
+  },
+};
+</script>
 
+<style lang="scss" scoped>
+p {
+  font-size: 24px;
+}
 </style>
