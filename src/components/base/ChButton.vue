@@ -1,7 +1,24 @@
 <template>
-    gfgf
+    <button :style="{background: color}">
+        <slot name="left"></slot>
+        <slot></slot>
+        <slot name="right"></slot>
+    </button>
 </template>
 
-<style lang="scss" scoped>
+<script>
+export default {
+    props: {
+        color: {
+            type: String,
+            default: "",
+        }
+    }
+}
+</script>
 
+<style lang="scss" scoped>
+button {
+    display: flex;
+}
 </style>
