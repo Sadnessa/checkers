@@ -14,7 +14,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  margin: 10px 0px;
+  font-size: 48px;;
+}
+
 p {
-  font-size: 24px;
+  font-size: 14px;
+  margin: 0px;
+  color: #979797;
+
 }
 </style>
