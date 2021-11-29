@@ -1,5 +1,5 @@
 <template>
-    gfgdf
+    <div></div>
 </template>
 
 <style lang="scss" scoped>
