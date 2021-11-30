@@ -29,6 +29,7 @@ button {
   border-radius: 5px;
   border: none;
   margin: 12px 0px;
+  cursor: pointer;
 }
 
 .left {
