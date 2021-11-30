@@ -25,7 +25,7 @@ export default {
 .section {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0px;
+  margin: 50px 0px;
 }
 
 .text-wrapper {

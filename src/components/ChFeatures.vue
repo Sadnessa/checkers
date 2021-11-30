@@ -64,6 +64,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 30px 0px;
 }
 .card-wrapper {
     display: flex;
@@ -71,6 +72,5 @@ export default {
     flex-wrap: wrap;
     max-width: 80%;
     justify-content: center;
-    // margin-left: 90px;
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div class="supp-section">
+        
+    </div>
 </template>
 
 <style lang="scss" scoped>
