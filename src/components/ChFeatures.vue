@@ -72,5 +72,10 @@ export default {
     flex-wrap: wrap;
     max-width: 80%;
     justify-content: center;
+
+    p {
+        font-weight: bold;
+        font-size: 18px;
+    }
 }
 </style>
