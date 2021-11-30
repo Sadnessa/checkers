@@ -1,5 +1,5 @@
 <template>
-  <button :style="{ background: color }">
+  <button :style="computedStyle">
     <div class="left">
       <slot name="left"></slot>
     </div>
@@ -17,7 +17,25 @@ export default {
       type: String,
       default: "",
     },
+
+    bordered: {
+      type: Boolean,
+      default: false,
+    }
   },
+
+  computed: {
+    computedStyle() {
+      if(this.bordered) {
+        return {
+          border: `2px solid ${this.color}`
+        }
+      }
+      return {
+        background: this.color
+      }
+    }
+  }
 };
 </script>
 
@@ -30,6 +48,7 @@ button {
   border: none;
   margin: 12px 0px;
   cursor: pointer;
+  background: transparent;
 }
 
 .left {

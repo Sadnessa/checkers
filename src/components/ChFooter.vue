@@ -1,12 +1,12 @@
 <template>
   <div class="footer-section">
-    <ChButton color="#FFFFFF">
+    <ChButton color="#3f3f3f" bordered>
       <template #left>
         <img src="../assets/git.png" height="48" width="50" />
       </template>
       <ChText textColor="#3F3F3F"> Create issue </ChText>
     </ChButton>
-    <ChButton color="#FFFFFF">
+    <ChButton color="#3f3f3f" bordered>
       <template #left>
         <img src="../assets/git.png" height="48" width="50" />
       </template>
@@ -36,9 +36,7 @@ export default {
 }
 
 button {
-  border: 2px solid #3f3f3f;
   box-sizing: border-box;
-  border-radius: 5px;
   margin: 6px;
 }
 
