@@ -9,7 +9,6 @@ in any chat. </ChText>
     <img src="../assets/phone_image.png" />
   </div>
   </div>
-  
 </template>
 
 <script>
