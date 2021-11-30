@@ -34,11 +34,11 @@ button {
 
 .left {
   display: flex;
-  margin-right: 4px;
+  margin-right: 10px;
 }
 
 .right {
   display: flex;
-  margin-left: 4px;
+  margin-left: 6px;
 }
 </style>
