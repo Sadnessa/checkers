@@ -59,11 +59,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.features-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .card-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 80%;
     justify-content: center;
+    // margin-left: 90px;
 }
 </style>
