@@ -8,9 +8,9 @@
         <ChText textColor="#979797">
             I have to pay for the bot server every month. You can help me.
         </ChText>
-        <ChProgressBar></ChProgressBar>
+        <ChProgressBar :progress="currentMoney/moneyGoal"></ChProgressBar>
         <ChText textColor="#27A7E5" class="money">
-            5 of 12$
+            {{currentMoney}}$ of {{moneyGoal}}$
         </ChText>
     </div>
     <div class="button-wrapper">
@@ -33,6 +33,13 @@ export default {
     ChProgressBar,
     ChButton,
   },
+
+  data(){
+    return {
+      moneyGoal: 12,
+      currentMoney: 0,
+    }
+  }
 };
 </script>
 
