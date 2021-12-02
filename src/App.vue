@@ -38,7 +38,6 @@ export default {
 #app {
   display: flex;
   justify-content: center;
-  background: #61bde7;
 }
 
 body {

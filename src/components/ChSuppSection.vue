@@ -69,6 +69,10 @@ export default {
           font-size: 24px;
           font-weight: bold;
       }
+
+      p {
+        font-size: 18px;
+      }
   }
 
 .button-wrapper {
