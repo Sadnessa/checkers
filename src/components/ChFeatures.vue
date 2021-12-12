@@ -5,12 +5,12 @@
     </div>
     <div class="card-wrapper">
       <ChCard v-for="card in cards" :key="card.text">
-        <template #img>
-          <img :src="card.imgUrl" heigh="120" width="120" />
-        </template>
         <ChText textColor="black">
           {{ card.text }}
         </ChText>
+        <template #img>
+          <img :src="card.imgUrl" heigh="120" width="120" />
+        </template>
       </ChCard>
     </div>
   </div>
@@ -51,6 +51,7 @@ export default {
       ],
     };
   },
+  
   components: {
     ChText,
     ChCard,

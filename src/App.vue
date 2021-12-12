@@ -2,6 +2,7 @@
   <ChContainer>
     <ChHeader></ChHeader>
     <ChHowToUse></ChHowToUse>
+    <ChSkins></ChSkins>
     <ChFeatures></ChFeatures>
     <ChSuppSection></ChSuppSection>
     <ChFooter></ChFooter>
@@ -12,6 +13,7 @@
 import ChContainer from "./components/base/ChContainer.vue"
 import ChHeader from "./components/ChHeader.vue"
 import ChHowToUse from "./components/ChHowToUse.vue"
+import ChSkins from "./components/ChSkins.vue"
 import ChFeatures from "./components/ChFeatures.vue"
 import ChSuppSection from "./components/ChSuppSection.vue"
 import ChFooter from "./components/ChFooter.vue"
@@ -25,6 +27,7 @@ export default {
     ChFeatures,
     ChSuppSection,
     ChFooter,
+    ChSkins,
   },
 };
 </script>
