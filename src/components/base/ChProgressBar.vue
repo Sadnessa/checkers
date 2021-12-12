@@ -30,7 +30,8 @@ export default {
 <style lang="scss" scoped>
 .bar-wrapper {
   padding: 4px;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   height: 46px;
   margin: 20px;
   border-radius: 5px;
