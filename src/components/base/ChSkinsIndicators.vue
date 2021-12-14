@@ -33,6 +33,7 @@ export default {
   user-select: none;
   border-color: transparent;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 
   &--active {
     border: 3px solid;

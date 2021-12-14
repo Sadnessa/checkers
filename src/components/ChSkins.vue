@@ -141,6 +141,7 @@ export default {
       align-items: center;
       color: white;
       transition: all 0.2s ease-in-out;
+      cursor: pointer;
 
       &:hover {
         background: rgba(100, 100, 100, 0.5);
