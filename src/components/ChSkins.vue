@@ -21,7 +21,7 @@
     </div>
     <div class="indicators">
       <div class="buttons">
-        <div class="button button--small"></div>
+        <div class="button button--small" v-for="indicator in this.skins.length" :key="indicator"></div>
       </div>
     </div>
   </div>
@@ -113,9 +113,9 @@ export default {
   }
 
   .buttons {
-    position: absolute;
     user-select: none;
     width: 100%;
+    display: flex;
 
     .button {
       background: rgba($color: #000000, $alpha: 0.4);
@@ -136,21 +136,30 @@ export default {
       &--left {
         position: absolute;
         left: 120px;
-        transform: translateY(80%);
+        transform: translateY(130px);
       }
 
       &--right {
         position: absolute;
         right: 120px;
-        transform: translateY(80%);
+        transform: translateY(130px);
       }
 
       &--small {
         border-radius: unset;
-        height: 24px;
-      width: 24px;
+        height: 36px;
+        width: 36px;
+        display: flex;
+        margin: 20px 6px;
       }
     }
   }
 }
+
+.indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
 </style>
