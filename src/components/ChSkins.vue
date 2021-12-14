@@ -1,20 +1,21 @@
 <template>
   <div class="section">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
     <div class="title">
       <ChText large>Checkers skins</ChText>
     </div>
     <div class="buttons">
-      <div class="button button--left">
+      <div class="button button--left" @click="prevSkin">
         <span class="material-icons-round"> arrow_left </span>
       </div>
-      <div class="button button--right">
+      <div class="button button--right" @click="nextSkin">
         <span class="material-icons-round"> arrow_right </span>
       </div>
     </div>
     <div class="checkers-demo">
-      <ChSkinsDemo></ChSkinsDemo>
+      <ChSkinsDemo
+        :white="currentSkin.white"
+        :black="currentSkin.black"
+      ></ChSkinsDemo>
     </div>
   </div>
 </template>
@@ -31,9 +32,45 @@ export default {
 
   data() {
     return {
-      currentSkin: {white: "a", black: "b"}
-    }
-  }
+      currentSkinIndex: 0,
+
+      skins: [
+        {
+          white: "🧁",
+          black: "🍩",
+        },
+        {
+          white: "e",
+          black: "4",
+        },
+      ],
+    };
+  },
+
+  computed: {
+    currentSkin() {
+      return {
+        white: this.skins[this.currentSkinIndex].white,
+        black: this.skins[this.currentSkinIndex].black,
+      };
+    },
+  },
+
+  methods: {
+    nextSkin() {
+      if(this.currentSkinIndex >= this.skins.length-1) {
+        return
+      }
+      this.currentSkinIndex += 1;
+    },
+
+    prevSkin() {
+      if(this.currentSkinIndex == 0) {
+        return
+      }
+      this.currentSkinIndex -= 1;
+    },
+  },
 };
 </script>
 
