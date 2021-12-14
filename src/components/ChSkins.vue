@@ -20,21 +20,27 @@
       ></ChSkinsDemo>
     </div>
     <div class="indicators">
-      <div class="buttons">
-        <div class="button button--small" v-for="indicator in this.skins.length" :key="indicator"></div>
-      </div>
+      <ChSkinsIndicators
+        v-for="(skin, index) in skins"
+        :key="skin"
+        @click="slide(index)"
+      >
+        {{ skin.logo }}
+      </ChSkinsIndicators>
     </div>
   </div>
 </template>
 
 <script>
 import ChText from "./base/ChText.vue";
+import ChSkinsIndicators from "./base/ChSkinsIndicators.vue";
 import ChSkinsDemo from "./base/ChSkinsDemo.vue";
 
 export default {
   components: {
     ChText,
     ChSkinsDemo,
+    ChSkinsIndicators,
   },
 
   data() {
@@ -43,18 +49,21 @@ export default {
 
       skins: [
         {
+          logo: "🌓",
           white: "🌕",
           black: "🌑",
           whiteQueen: "🌝",
           blackQueen: "🌚",
         },
         {
+          logo: "🎂",
           white: "🧁",
           black: "🍩",
           whiteQueen: "🍰",
           blackQueen: "🍪",
         },
         {
+          logo: "🐾",
           white: "🐈",
           black: "🐕",
           whiteQueen: "🐱",
@@ -88,6 +97,10 @@ export default {
         return;
       }
       this.currentSkinIndex -= 1;
+    },
+
+    slide(i) {
+      this.currentSkinIndex = i;
     },
   },
 };
@@ -145,21 +158,20 @@ export default {
         transform: translateY(130px);
       }
 
-      &--small {
-        border-radius: unset;
-        height: 36px;
-        width: 36px;
-        display: flex;
-        margin: 20px 6px;
+      &--active {
+        background: rgba(53, 53, 53, 0.5);
+        border: 3px solid;
+        border-color: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
       }
     }
   }
 }
 
 .indicators {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 </style>
