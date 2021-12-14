@@ -1,12 +1,14 @@
 <template>
   <button :style="computedStyle">
-    <div class="left">
-      <slot name="left"></slot>
-    </div>
-    <slot></slot>
-    <div class="right">
-      <slot name="right"></slot>
-    </div>
+    <span class="button-content">
+      <div class="left">
+        <slot name="left"></slot>
+      </div>
+      <slot></slot>
+      <div class="right">
+        <slot name="right"></slot>
+      </div>
+    </span>
   </button>
 </template>
 
@@ -21,21 +23,21 @@ export default {
     bordered: {
       type: Boolean,
       default: false,
-    }
+    },
   },
 
   computed: {
     computedStyle() {
-      if(this.bordered) {
+      if (this.bordered) {
         return {
-          border: `2px solid ${this.color}`
-        }
+          border: `2px solid ${this.color}`,
+        };
       }
       return {
-        background: this.color
-      }
-    }
-  }
+        background: this.color,
+      };
+    },
+  },
 };
 </script>
 
@@ -49,6 +51,26 @@ button {
   margin: 12px 0px;
   cursor: pointer;
   background: transparent;
+  position: relative;
+
+  &:hover {
+    overflow: hidden;
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #525252, $alpha: 0.2);
+      content: "";
+    }
+  }
+
+  .button-content {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
 }
 
 .left {

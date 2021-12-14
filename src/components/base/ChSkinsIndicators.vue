@@ -34,12 +34,25 @@ export default {
   border-color: transparent;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  position: relative;
 
   &--active {
     border: 3px solid;
     border-color: rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     background: rgba(82, 82, 82, 0.3);
+  }
+  &:hover {
+    overflow: hidden;
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #525252, $alpha: 0.2);
+      content: "";
+    }
   }
 }
 </style>
