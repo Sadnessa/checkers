@@ -28,6 +28,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.progress-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bar-wrapper {
   padding: 4px;
   width: 100%;
