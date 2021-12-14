@@ -90,6 +90,11 @@ export default {
     user-select: none;
     width: 26px;
     height: 21px;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background: rgba($color: #000000, $alpha: 0.2);
+    }
   }
 }
 </style>

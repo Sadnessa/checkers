@@ -113,13 +113,20 @@ export default {
     width: 100%;
 
     .button {
-      background: rgba($color: #000000, $alpha: 0.5);
+      background: rgba($color: #000000, $alpha: 0.4);
       border-radius: 50%;
       height: 30px;
       width: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: white;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: rgba(100, 100, 100, 0.5);
+      color: rgb(77, 77, 77);
+      }
 
       &--left {
         position: absolute;
