@@ -24,6 +24,7 @@
         v-for="(skin, index) in skins"
         :key="skin"
         @click="slide(index)"
+        :active="currentSkinIndex == index"
       >
         {{ skin.logo }}
       </ChSkinsIndicators>

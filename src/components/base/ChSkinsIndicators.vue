@@ -1,5 +1,5 @@
 <template>
-  <div class="btn-section">
+  <div class="btn-section" :class="{ 'btn-section--active': active }">
     <div class="emoji-wrapper">
       <slot></slot>
     </div>
@@ -8,13 +8,12 @@
 
 <script>
 export default {
- props: {
+  props: {
     active: {
-     type: Boolean,
-     default: false,
-    }
-}
-
+      type: Boolean,
+      default: false,
+    },
+  },
 };
 </script>
 
@@ -31,5 +30,15 @@ export default {
   border-radius: 5px;
   box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.51);
   padding: 0px;
+  user-select: none;
+  border-color: transparent;
+  transition: all 0.2s ease-in-out;
+
+  &--active {
+    border: 3px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    background: rgba(82, 82, 82, 0.3);
+  }
 }
 </style>
