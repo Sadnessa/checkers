@@ -19,6 +19,11 @@
         :blackQueen="currentSkin.blackQueen"
       ></ChSkinsDemo>
     </div>
+    <div class="indicators">
+      <div class="buttons">
+        <div class="button button--small"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -72,15 +77,15 @@ export default {
 
   methods: {
     nextSkin() {
-      if(this.currentSkinIndex >= this.skins.length-1) {
-        return
+      if (this.currentSkinIndex >= this.skins.length - 1) {
+        return;
       }
       this.currentSkinIndex += 1;
     },
 
     prevSkin() {
-      if(this.currentSkinIndex == 0) {
-        return
+      if (this.currentSkinIndex == 0) {
+        return;
       }
       this.currentSkinIndex -= 1;
     },
@@ -125,7 +130,7 @@ export default {
 
       &:hover {
         background: rgba(100, 100, 100, 0.5);
-      color: rgb(77, 77, 77);
+        color: rgb(77, 77, 77);
       }
 
       &--left {
@@ -138,6 +143,12 @@ export default {
         position: absolute;
         right: 120px;
         transform: translateY(80%);
+      }
+
+      &--small {
+        border-radius: unset;
+        height: 24px;
+      width: 24px;
       }
     }
   }
