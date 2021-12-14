@@ -37,7 +37,7 @@ export default {
   data(){
     return {
       moneyGoal: 12,
-      currentMoney: 0,
+      currentMoney: 5,
     }
   }
 };
