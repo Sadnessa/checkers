@@ -32,22 +32,32 @@ export default {
     black: {
       type: String,
     },
+
+    whiteQueen: {
+      type: String,
+    },
+
+    blackQueen: {
+      type: String,
+    }
   },
 
   computed: {
     table() {
       const w = this.$props.white;
       const b = this.$props.black;
+      const wQ = this.$props.whiteQueen;
+      const bQ = this.$props.blackQueen;
 
       return [
-        ["  ", w, "  ", w, "  ", w, "  ", w],
+        ["  ", wQ, "  ", w, "  ", w, "  ", w],
         [w, "  ", w, "  ", w, "  ", w, "  "],
         ["  ", w, "  ", w, "  ", w, "  ", w],
         ["|||", "  ", "|||", "  ", "|||", "  ", "|||", "  "],
         ["  ", "|||", "  ", "|||", "  ", "|||", "  ", "|||"],
         [b, "  ", b, "  ", b, "  ", b, "  "],
         ["  ", b, "  ", b, "  ", b, "  ", b],
-        [b, "  ", b, "  ", b, "  ", b, "  "],
+        [b, "  ", b, "  ", b, "  ", bQ, "  "],
       ];
     },
   },

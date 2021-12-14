@@ -15,6 +15,8 @@
       <ChSkinsDemo
         :white="currentSkin.white"
         :black="currentSkin.black"
+        :whiteQueen="currentSkin.whiteQueen"
+        :blackQueen="currentSkin.blackQueen"
       ></ChSkinsDemo>
     </div>
   </div>
@@ -36,12 +38,22 @@ export default {
 
       skins: [
         {
-          white: "🧁",
-          black: "🍩",
+          white: "🌕",
+          black: "🌑",
+          whiteQueen: "🌝",
+          blackQueen: "🌚",
         },
         {
-          white: "e",
-          black: "4",
+          white: "🧁",
+          black: "🍩",
+          whiteQueen: "🍰",
+          blackQueen: "🍪",
+        },
+        {
+          white: "🐈",
+          black: "🐕",
+          whiteQueen: "🐱",
+          blackQueen: "🐶",
         },
       ],
     };
@@ -52,6 +64,8 @@ export default {
       return {
         white: this.skins[this.currentSkinIndex].white,
         black: this.skins[this.currentSkinIndex].black,
+        whiteQueen: this.skins[this.currentSkinIndex].whiteQueen,
+        blackQueen: this.skins[this.currentSkinIndex].blackQueen,
       };
     },
   },
