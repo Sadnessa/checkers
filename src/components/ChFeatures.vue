@@ -77,6 +77,12 @@ export default {
   p {
     font-weight: bold;
     font-size: 18px;
+    margin-top: 20px;
   }
+}
+
+.card-section {
+   width: 200px;
+  height: 200px;
 }
 </style>
