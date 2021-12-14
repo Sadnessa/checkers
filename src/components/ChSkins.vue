@@ -5,10 +5,10 @@
     </div>
     <div class="buttons">
       <div class="button button--left" @click="prevSkin">
-        <span class="material-icons-round"> arrow_left </span>
+        <span class="material-icons-round"> navigate_before </span>
       </div>
       <div class="button button--right" @click="nextSkin">
-        <span class="material-icons-round"> arrow_right </span>
+        <span class="material-icons-round"> navigate_next </span>
       </div>
     </div>
     <div class="checkers-demo">
