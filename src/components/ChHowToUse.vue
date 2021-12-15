@@ -9,7 +9,7 @@
       </ChText>
     </div>
     <div class="image-wrapper">
-      <img src="../assets/phone_image.png" />
+      <img src="../assets/checks-phone-render.png"/>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
 .section {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0px;
+  margin: 100px 0px;
 }
 
 .text-wrapper {
@@ -44,7 +44,11 @@ export default {
   }
 
   p {
-    max-width: 60%;
+    max-width: 70%;
   }
+}
+
+img {
+  width: 120%;
 }
 </style>
