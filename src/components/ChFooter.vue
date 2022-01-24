@@ -15,18 +15,6 @@
   </div>
 </template>
 
-<script>
-import ChButton from "./base/ChButton.vue";
-import ChText from "./base/ChText.vue";
-
-export default {
-  components: {
-    ChButton,
-    ChText,
-  },
-};
-</script>
-
 <style lang="scss" scoped>
 .footer-section {
   display: flex;

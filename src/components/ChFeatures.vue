@@ -17,10 +17,13 @@
 </template>
 
 <script>
-import ChText from "./base/ChText.vue";
 import ChCard from "./base/ChCard.vue";
 
 export default {
+  components: {
+    ChCard,
+  },
+
   data() {
     return {
       cards: [
@@ -50,11 +53,6 @@ export default {
         },
       ],
     };
-  },
-  
-  components: {
-    ChText,
-    ChCard,
   },
 };
 </script>

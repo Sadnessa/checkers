@@ -16,18 +16,6 @@
   </div>
 </template>
 
-<script>
-import ChText from "./base/ChText.vue";
-import ChButton from "./base/ChButton.vue";
-
-export default {
-  components: {
-    ChText,
-    ChButton,
-  },
-};
-</script>
-
 <style lang="scss" scoped>
 .ch-header {
   display: flex;

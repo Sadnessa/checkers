@@ -23,15 +23,11 @@
 </template>
 
 <script>
-import ChText from "./base/ChText.vue";
 import ChProgressBar from "./base/ChProgressBar.vue";
-import ChButton from "./base/ChButton.vue";
 
 export default {
   components: {
-    ChText,
     ChProgressBar,
-    ChButton,
   },
 
   data() {

@@ -14,16 +14,6 @@
   </div>
 </template>
 
-<script>
-import ChText from "./base/ChText.vue";
-
-export default {
-  components: {
-    ChText,
-  },
-};
-</script>
-
 <style lang="scss" scoped>
 .section {
   display: flex;

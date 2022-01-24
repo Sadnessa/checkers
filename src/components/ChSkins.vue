@@ -33,13 +33,11 @@
 </template>
 
 <script>
-import ChText from "./base/ChText.vue";
 import ChSkinsIndicators from "./base/ChSkinsIndicators.vue";
 import ChSkinsDemo from "./base/ChSkinsDemo.vue";
 
 export default {
   components: {
-    ChText,
     ChSkinsDemo,
     ChSkinsIndicators,
   },
