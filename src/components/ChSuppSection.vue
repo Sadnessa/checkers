@@ -1,8 +1,8 @@
 <template>
   <div class="supp-section">
-    <div class="header">
+    <div class="header"> 
+      <img src="../assets/supp.png" heigth="220" width="220" />
       <ChText large> Support </ChText>
-      <img src="../assets/supp.png" heigth="187" width="183" />
     </div>
     <div class="status-bar">
       <ChText textColor="#979797">
@@ -13,11 +13,23 @@
         {{ currentMoney }}$ of {{ moneyGoal }}$
       </ChText>
     </div>
-    <div class="button-wrapper">
-      <img src="../assets/patr.png" height="170" width="160" />
-      <ChButton color="#FF6855">
-        <ChText textColor="white">Patreon</ChText>
-      </ChButton>
+    <div class="buttons-sec">
+      <div class="button-wrapper">
+        <img src="../assets/patr.webp" height="170" width="160" />
+        <a href="https://www.patreon.com/m0ksem">
+          <ChButton color="#FF6855">
+            <ChText textColor="white">Patreon</ChText>
+          </ChButton>
+        </a>
+      </div>
+      <div class="button-wrapper">
+        <img src="../assets/ko-fi.webp" height="170" width="160" />
+        <a href="https://ko-fi.com/m0ksem">
+          <ChButton color="#01a7fe">
+            <ChText textColor="white">Ko-fi</ChText>
+          </ChButton>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -41,7 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 .supp-section {
-  margin: 80px 0px;
+  margin: 100px 0px;
 
   .header {
     display: flex;
@@ -50,7 +62,8 @@ export default {
 
     img {
       position: absolute;
-      left: 60%;
+      right: 60%;
+      user-select: none;
     }
   }
 
@@ -71,7 +84,11 @@ export default {
     }
   }
 
-  .button-wrapper {
+  .buttons-sec {
+    display: flex;
+    justify-content: center;
+    
+    .button-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,9 +99,18 @@ export default {
       border-radius: 5px;
     }
 
+    a {
+      text-decoration: none;
+      width: 100%;
+    }
+
     button {
+      width: 100%;
       padding: 16px 46px;
     }
   }
+  }
+
+  
 }
 </style>
