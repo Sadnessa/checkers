@@ -36,11 +36,11 @@ export default {
           text: "Multi language",
         },
         {
-          imgUrl: require("../assets/cake.png"),
+          imgUrl: require("../assets/donut.png"),
           text: "Game skins",
         },
         {
-          imgUrl: require("../assets/free.png"),
+          imgUrl: require("../assets/freed.png"),
           text: "No ads",
         },
         {
@@ -77,10 +77,14 @@ export default {
     font-size: 18px;
     margin-top: 20px;
   }
+
+  img {
+    user-select: none;
+  }
 }
 
 .card-section {
-   width: 200px;
+  width: 200px;
   height: 200px;
 }
 </style>

@@ -1,11 +1,13 @@
 <template>
   <button :style="computedStyle">
     <span class="button-content">
-      <div class="left">
+      <div class="left" v-if="$slots.left">
         <slot name="left"></slot>
       </div>
-      <slot></slot>
-      <div class="right">
+      <div class="center">
+        <slot></slot>
+      </div>
+      <div class="right" v-if="$slots.right">
         <slot name="right"></slot>
       </div>
     </span>
@@ -67,9 +69,16 @@ button {
   }
 
   .button-content {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 1;
+    text-align: center;
+
+    .center {
+      width: 100%;
+    }
   }
 }
 
