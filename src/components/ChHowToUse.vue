@@ -2,9 +2,9 @@
   <div class="section">
     <div class="text-wrapper">
       <ChText large>How to use</ChText>
-      <ChText textColor="#979797"
-        >After <a href="">/start</a> command in
-        <a href="">@GameCheckersBot</a> you can call bot by typing its username
+      <ChText textColor="#979797">
+        After <a href="https://t.me/gamecheckersbot">/start</a> command in
+        <a href="https://t.me/gamecheckersbot">@GameCheckersBot</a> you can call bot by typing its username
         and a query in the text input field in any chat.
       </ChText>
     </div>

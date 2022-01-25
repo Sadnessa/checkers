@@ -6,12 +6,14 @@
     <div class="col col--50 text-wrapper">
       <ChText large>GameCheckersBot</ChText>
       <ChText textColor="#979797">Chess game in Telegram chat</ChText>
-      <ChButton color="#25a3e2">
-        <ChText textColor="white">Start playing</ChText>
-        <template #right>
-          <img src="../assets/telega.svg" height="18" width="18" />
-        </template>
-      </ChButton>
+      <a href="https://t.me/gamecheckersbot"
+        ><ChButton color="#25a3e2">
+          <ChText textColor="white">Start playing</ChText>
+          <template #right>
+            <img src="../assets/telega.svg" height="18" width="18" />
+          </template>
+        </ChButton>
+      </a>
     </div>
   </div>
 </template>
@@ -41,6 +43,10 @@
   .text-wrapper {
     padding: 40px 60px;
     box-sizing: border-box;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 </style>
